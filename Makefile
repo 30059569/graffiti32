@@ -23,8 +23,12 @@ exe = GraffitiWin.exe
 .suffixes: .exe .obj .asm .c .res .rc .cpp
 
 clean:
-	rm -f -r .\obj\*.*
+	#unix,linux,cygwin specific
+	#rm -f -r .\obj\*.*
 	
+	#windows version
+	del .\obj\*.* /Q
+
 compile:
 	echo ================================== COMPILE ====================================================
 	$(bcc) $(cc_opt) .\src\*.cpp
