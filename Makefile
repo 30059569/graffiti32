@@ -16,7 +16,7 @@ cc_opt = -c $(COPT) -I"$(bcc_inc_dir)" -L"$(bcc_lib_dir)"  -I".\inc" -L".\lib" -
 link_opt = -C -c $(LOPT) -L"$(bcc_lib_dir)" -L"$(bcc_lib_dir)\PSDK" -L".\lib"  -L".\obj" -I".\obj" 
 
 #__________________ project specifics________________________
-exe = GraffitiWin.exe
+exe = graffiti32.exe
 
 #_______________________ targets ____________________________
 .autodepend
